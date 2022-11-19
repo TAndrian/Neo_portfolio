@@ -1,0 +1,81 @@
+.navbar {
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 13;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+	.char {
+		opacity: 0;
+		text-shadow: 0px 0px 10px white;
+		&--visible {
+			opacity: 1;
+			text-shadow: 1px 1px 3px black;
+		}
+	}
+
+	.title {
+		position: relative;
+		&-shadow {
+			position: absolute;
+			top: 0;
+			z-index: -1;
+			color: rgb(20, 20, 20);
+		}
+		h1,
+		h2 {
+			@include screen-x(500px) {
+				font-size: 2em;
+			}
+		}
+	}
+
+	&__links {
+		@include screen-x(1100px) {
+			display: none;
+		}
+		.link {
+			display: block;
+			color: rgb(130, 130, 130);
+			&:hover {
+				background: rgba(255, 255, 255, 0.2);
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				color: white;
+			}
+			&:focus {
+				/* From https://css.glass */
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 16px;
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				color: white;
+			}
+		}
+	}
+
+	&__trigger {
+		display: none;
+		@include screen-x(1100px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 3px white solid;
+			font-size: 1.5em;
+			box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+			&:hover {
+				background: $color-theme;
+				border: 3px $color-theme solid;
+				font-size: 2em;
+			}
+			&:active {
+				font-size: 1em;
+			}
+		}
+	}
+}

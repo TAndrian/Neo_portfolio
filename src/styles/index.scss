@@ -1,0 +1,60 @@
+/*
+	Import project styles from here
+*/
+
+@import "./fastui.css";
+@import "./vars.scss";
+@import "./mixins.scss";
+
+.theme {
+	color: $color-theme;
+}
+
+.bg-theme {
+	background: $color-theme;
+}
+
+.theme2 {
+	color: $color-theme2;
+}
+
+.bg-theme2 {
+	background: $color-theme2;
+}
+
+.white {
+	color: white;
+}
+
+.bg-white {
+	background: white;
+}
+
+blockquote {
+	margin: 0;
+}
+
+.container {
+	@include flex-row(initial, flex-start);
+	width: 1400px;
+	margin: auto;
+
+	@include screen-x(1700px) {
+		width: 1000px;
+	}
+
+	@include screen-x(1400px) {
+		width: 90%;
+	}
+
+	@include screen-x(900px) {
+		width: calc(100% - 20px);
+	}
+}
+@import "./navigation/navbar.scss";
+@import "./navigation/menu.scss";
+@import "./coverHome/profileCard.scss";
+@import "./coverHome/cover.scss";
+@import "./coverHome/coverBottom.scss";
+@import "./coverHome/coverQuote.scss";
+@import "./coverHome/coverRight.scss";
