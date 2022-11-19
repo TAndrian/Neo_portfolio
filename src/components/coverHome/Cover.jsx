@@ -45,7 +45,7 @@ const Cover = () => {
 
 	return (
 		<div className="cover w-100 o-h">
-			<div className={`w-100 h-100 cover__bgcolor--${bgCover}`}></div>
+			<div className={`w-100 h-100 cover__bgcolor--${bgColors}`}></div>
 			<div className="container cover__container h-100">
 				<div className={`cover__bg--${bgCover} w-100 h-100 f-c-st-st`}>
 					<div className="w-100 h-80 o-h f-r-be-ce">
