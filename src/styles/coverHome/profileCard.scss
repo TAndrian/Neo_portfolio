@@ -1,0 +1,111 @@
+.card-profile {
+	width: 350px;
+	height: calc(100% - 40px);
+	max-height: 400px;
+	background: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+	.spacer {
+		flex: 1 1 auto;
+	}
+
+	@include screen-x(900px) {
+		display: block;
+		margin: auto;
+		.spacer {
+			display: none;
+		}
+	}
+
+	@include screen-x(400px) {
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		border-radius: 0;
+		&--dark {
+			background: transparent;
+		}
+	}
+
+	@include screen-y(600px) {
+		width: 100%;
+		height: 100%;
+		max-height: 100%;
+		border-radius: 0;
+	}
+
+	$card-figure-size: 200px;
+
+	@include screen-x(350px) {
+		$card-figure-size: 150px;
+	}
+
+	@include screen-x(330px) {
+		$card-figure-size: 120px;
+	}
+
+	&__company-label {
+		@include screen-x(350px) {
+			display: none;
+		}
+	}
+
+	&__figure {
+		width: $card-figure-size;
+		height: $card-figure-size;
+		box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.8);
+		transform: rotate(10deg);
+		animation: oscillation infinite 3.1s ease-in-out;
+		margin-top: 20px;
+		// Image oscillation animation
+		@keyframes oscillation {
+			0% {
+				transform: rotate(10deg);
+				transform-origin: 30px 30px;
+			}
+			50% {
+				transform: rotate(17deg);
+				transform-origin: 30px 30px;
+			}
+			100% {
+				transform: rotate(10deg);
+				transform-origin: 30px 30px;
+			}
+		}
+	}
+
+	&__image {
+		width: calc($card-figure-size - 10px);
+		height: calc($card-figure-size - 10px);
+	}
+
+	&__name {
+		text-shadow: 1px 1px 3px black;
+		@include screen-x(330px) {
+			font-size: 1.3em;
+		}
+	}
+
+	&__separator {
+		width: calc(100% - 40px);
+		height: 1px;
+		background: rgb(60, 60, 60);
+	}
+
+	&__description {
+		text-shadow: 1px 1px 3px black;
+		color: rgb(200, 200, 200);
+	}
+
+	&__link {
+		color: white;
+		&:hover {
+			background: lighten($color-theme, 20%);
+		}
+		&:active {
+			background: darken($color-theme, 20%);
+		}
+		@include screen-x(350px) {
+			margin: 10px 0 0 20px;
+		}
+	}
+}
