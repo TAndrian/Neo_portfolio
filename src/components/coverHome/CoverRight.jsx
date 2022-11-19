@@ -4,7 +4,7 @@ import CoverQuote from "./CoverQuote";
 
 const titleList = [
 	<span key={uuidv4()}>
-		The future belongs to <span className="theme">those who believe</span>in the
+		The future belongs to <span className="theme">those who believe</span> in the
 		beauty of their <span className="theme">dreams</span>
 	</span>,
 	<span key={uuidv4()}>
