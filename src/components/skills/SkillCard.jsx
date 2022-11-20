@@ -3,9 +3,7 @@ import { LazyLoadImage as Image } from "react-lazy-load-image-component";
 
 const SkillCard = ({ skill }) => {
 	const imageName = skill.name.split(" ").join("").toLowerCase();
-	useEffect(() => {
-		console.log(imageName);
-	}, []);
+
 	const style = {
 		background: skill.color,
 	};
