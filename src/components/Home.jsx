@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import Cover from "./coverHome/Cover";
-import Copyright from "./footer/Copyright";
-import GetInTouch from "./footer/GetInTouch";
 import NavbarWrapper from "./navigation/NavbarWrapper";
 import Section from "./reusable/Section";
-import Skills from "./skills/Skills";
+
 const AboutComponent = React.lazy(() => import("./about/About"));
+const SkillsComponent = React.lazy(() => import("./skills/Skills"));
+const FooterComponent = React.lazy(() => import("./footer/GetInTouch"));
+const CopyrightComponent = React.lazy(() => import("./footer/Copyright"));
 
 const Home = () => (
 	<Fragment>
@@ -32,9 +33,9 @@ const Home = () => (
 		<div className="container">
 			<AboutComponent />
 		</div>
-		<Skills />
-		<GetInTouch />
-		<Copyright />
+		<SkillsComponent />
+		<FooterComponent />
+		<CopyrightComponent />
 	</Fragment>
 );
 
