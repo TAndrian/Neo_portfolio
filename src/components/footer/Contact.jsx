@@ -8,11 +8,6 @@ const contactList = [
 		content: "t.andrian.rak@gmail.com",
 		icon: ["fas", "envelope"],
 	},
-
-	{
-		content: "Rennes 35000, France",
-		icon: ["fas", "map-marked-alt"],
-	},
 ];
 
 const mappedContacts = contactList.map((contact) => (
