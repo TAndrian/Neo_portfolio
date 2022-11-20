@@ -1,12 +1,27 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+	faGithub,
+	faLinkedinIn,
+	faUikit,
+} from "@fortawesome/free-brands-svg-icons";
 import {
 	faBars,
+	faBookOpenReader,
+	faCalendarAlt,
+	faClock,
+	faClover,
+	faCode,
+	faCodeBranch,
+	faDatabase,
 	faEnvelope,
+	faGlobe,
 	faLaptop,
 	faLaptopCode,
+	faLayerGroup,
+	faMapMarkedAlt,
+	faRocket,
 	faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,5 +38,16 @@ library.add(
 	faUserGraduate,
 	faLaptopCode,
 	faBars,
-	faLaptop
+	faLaptop,
+	faClover,
+	faBookOpenReader,
+	faClock,
+	faMapMarkedAlt,
+	faCalendarAlt,
+	faCodeBranch,
+	faUikit,
+	faCode,
+	faDatabase,
+	faLayerGroup,
+	faRocket
 );

@@ -1,0 +1,78 @@
+.about-card {
+	width: calc(50% - 43px);
+	height: 270px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+	@include screen-x(1200px) {
+		flex: 1;
+		width: auto;
+		height: 270px;
+	}
+
+	@include screen-x(700px) {
+		flex: none;
+	}
+
+	@include screen-x(600px) {
+		flex-direction: column;
+		width: 270px;
+		height: auto;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+
+	&__establishment {
+		position: absolute;
+		bottom: -100%;
+		background: rgba(0, 0, 0, 0.6);
+	}
+
+	&:hover {
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+		&:hover {
+			.about-card__establishment {
+				bottom: 0;
+			}
+		}
+	}
+
+	&__about {
+		flex: 1;
+	}
+
+	&__separator {
+		width: calc(100% - 20px);
+		height: 1px;
+		background: rgb(200, 200, 200);
+	}
+
+	&__years,
+	&__years2 {
+		color: rgb(180, 180, 180);
+	}
+
+	&__years {
+		@include screen-x(1200px) {
+			display: none;
+		}
+		@include screen-x(650px) {
+			display: block;
+		}
+	}
+
+	&__years2 {
+		display: none;
+		@include screen-x(1200px) {
+			display: block;
+		}
+		@include screen-x(650px) {
+			display: none;
+		}
+	}
+
+	&__representation {
+		position: relative;
+		background: #efefef;
+	}
+}

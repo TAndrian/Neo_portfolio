@@ -1,0 +1,6 @@
+.about {
+	@include screen-x(600px) {
+		width: 100%;
+		align-items: center;
+	}
+}
