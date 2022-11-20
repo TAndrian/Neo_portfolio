@@ -1,6 +1,7 @@
 .menu {
 	display: none;
 	@include screen-x(1100px) {
+		touch-action: none;
 		display: block;
 		position: fixed;
 		top: -100%;

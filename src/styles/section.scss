@@ -1,0 +1,47 @@
+.section {
+	padding-top: 76px;
+
+	&__container {
+		flex-direction: column;
+	}
+
+	&__separator {
+		border-radius: 3px;
+	}
+
+	&__cube {
+		animation: 2s rotation linear infinite;
+		@keyframes rotation {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	.title {
+		@include screen-x(900px) {
+			font-size: 1.5em;
+		}
+		@include screen-x(700px) {
+			font-size: 1.3em;
+		}
+	}
+
+	.subtitle {
+		@include screen-x(900px) {
+			font-size: 3.5em;
+		}
+		@include screen-x(700px) {
+			font-size: 2.7em;
+		}
+		@include screen-x(500px) {
+			font-size: 2.2em;
+		}
+		@include screen-x(400px) {
+			font-size: 1.8em;
+		}
+	}
+}

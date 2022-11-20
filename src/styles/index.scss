@@ -53,8 +53,19 @@ blockquote {
 }
 @import "./navigation/navbar.scss";
 @import "./navigation/menu.scss";
+@import "./section.scss";
 @import "./coverHome/profileCard.scss";
 @import "./coverHome/cover.scss";
 @import "./coverHome/coverBottom.scss";
 @import "./coverHome/coverQuote.scss";
 @import "./coverHome/coverRight.scss";
+@import "./timeline.scss";
+@import "./about/about.scss";
+@import "./about/aboutItem.scss";
+@import "./about/aboutCard.scss";
+@import "./skills/Skills.scss";
+@import "./skills/SkillCard.scss";
+@import "./footer/Contacts.scss";
+@import "./footer/GetInTouch.scss";
+@import "./footer/GetInTouchTitle.scss";
+@import "./footer/SendMessage.scss";
