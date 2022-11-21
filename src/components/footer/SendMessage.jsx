@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import GetInTouchTitle from "./GetInTouchTitle";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 
@@ -7,21 +7,6 @@ const message = `Hello 👋 !\n Thanks so much for reaching out! This auto-reply
         T.Andrian Rakotoarisoa.`;
 
 const SendMessage = () => {
-	const [isSent, setIsSent] = useState(false);
-	const [isvalid, setIsValid] = useState(false);
-	const [fields, setFields] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-
-	function checkValid() {
-		if (fields.name !== "" && fields.email !== "" && fields.message !== "") {
-			setIsValid(true);
-			setIsSent(true);
-		}
-	}
-
 	return (
 		<Fragment>
 			<GetInTouchTitle title="Leave a message" icon={["fas", "envelope"]} />
@@ -35,14 +20,6 @@ const SendMessage = () => {
 					placeholder="What's your name? 😄"
 					type="name"
 					name="name"
-					onChange={(event) =>
-						setFields((prevState) => {
-							return {
-								...prevState,
-								name: event.target.value,
-							};
-						})
-					}
 					required
 				/>
 				<input
@@ -50,14 +27,6 @@ const SendMessage = () => {
 					placeholder="Enter your e-mail "
 					type="email"
 					name="email"
-					onChange={(event) =>
-						setFields((prevState) => {
-							return {
-								...prevState,
-								email: event.target.value,
-							};
-						})
-					}
 					required
 				/>
 				<input type="hidden" name="_subject" value="Someone is interested ?" />
@@ -69,26 +38,13 @@ const SendMessage = () => {
 					className="input br-5 h-100px pd-10 pd-l-20 pd-r-20"
 					name="message"
 					placeholder="Write your message 📨"
-					onChange={(event) =>
-						setFields((prevState) => {
-							return {
-								...prevState,
-								message: event.target.value,
-							};
-						})
-					}
 					required
 				></textarea>
 				<button
 					className="submit bg-theme pd-10 pd-l-20 pd-r-20 mg-t-20 br-5 p tr-200"
 					type="submit"
-					onClick={() => checkValid}
 				>
-					{isSent && isvalid ? (
-						<Icon className="fs-150 white" icon={["fas", "check-circle"]} />
-					) : (
-						"Send"
-					)}
+					Send
 				</button>
 			</form>
 		</Fragment>
