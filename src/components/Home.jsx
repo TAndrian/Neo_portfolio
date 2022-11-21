@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 import Cover from "./coverHome/Cover";
 import NavbarWrapper from "./navigation/NavbarWrapper";
 import Section from "./reusable/Section";
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { MOBILE_INFO_MESSAGE, INFO_MESSAGE } from "../helpers/const";
+import { isMobile } from "react-device-detect";
 
 const AboutComponent = React.lazy(() => import("./about/About"));
 const SkillsComponent = React.lazy(() => import("./skills/Skills"));
@@ -30,6 +33,14 @@ const Home = () => (
 			</Fragment>
 		</Section>
 
+		<span className="container pd-b-25">
+			<Icon className="fs-140 blue mg-r-10" icon={["fas", "info-circle"]} />
+			{isMobile ? (
+				<p className="tx-ce fs-120">{MOBILE_INFO_MESSAGE}</p>
+			) : (
+				<p className="tx-ce fs-120">{INFO_MESSAGE}</p>
+			)}
+		</span>
 		<div className="container">
 			<AboutComponent />
 		</div>

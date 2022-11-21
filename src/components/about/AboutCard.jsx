@@ -31,7 +31,7 @@ const AboutCard = ({
 					<p className="pd-l-10 pd-r-10 white b fs-90">
 						<Icon icon={["fas", "map-marked-alt"]} /> {location}
 					</p>
-					<p className="pd-10 fs-90 white">{about}</p>
+					<p className="text--medium pd-10 fs-90 white">{about}</p>
 					<p className="mg-b-10 mg-r-10 tx-r">
 						<span className="pd-5 br-5 bg-theme white fs-90">
 							<Icon icon={["fas", "calendar-alt"]} /> {date}
@@ -47,9 +47,7 @@ const AboutCard = ({
 					</p>
 				</div>
 				<div className="about-card__separator mg-l-10 mg-r-10"></div>
-				<p className="pd-10 fs-90" style={{ lineHeight: "20px" }}>
-					{children || ""}
-				</p>
+				<p className="pd-10 fs-90 about-card__description">{children || ""}</p>
 				<p className="about-card__years mg-r-10 tx-r">
 					<Icon icon={["fas", "clock"]} /> {duration}
 				</p>

@@ -1,11 +1,14 @@
 import React, { Fragment, useState } from "react";
 import GetInTouchTitle from "./GetInTouchTitle";
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+
+const message = `Hello 👋 !\n Thanks so much for reaching out! This auto-reply is just to let you know… I received your email and will get back to you as soon as possible.\n
+        Best regards, 
+        T.Andrian Rakotoarisoa.`;
 
 const SendMessage = () => {
-	const message =
-		"Hello 👋 !\u000A Thanks so much for reaching out! This auto-reply is just to let you know… I received your email and will get back to you as soon as possible.\
-        Best regard\
-        T.Andrian Rakotoarisoa.";
+	const [isSent, setIsSent] = useState(false);
+
 	return (
 		<Fragment>
 			<GetInTouchTitle title="Leave a message" icon={["fas", "envelope"]} />
@@ -42,8 +45,13 @@ const SendMessage = () => {
 				<button
 					className="submit bg-theme pd-10 pd-l-20 pd-r-20 mg-t-20 br-5 p tr-200"
 					type="submit"
+					onClick={() => setIsSent(true)}
 				>
-					Send
+					{isSent ? (
+						<Icon className="fs-150 white" icon={["fas", "check-circle"]} />
+					) : (
+						"Send"
+					)}
 				</button>
 			</form>
 		</Fragment>
