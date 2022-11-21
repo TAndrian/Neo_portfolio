@@ -9,7 +9,10 @@ import {
 	DATABASE_LIST,
 	OTHER_LIST,
 	NEXT_TECH_LIST,
+	MOBILE_INFO_MESSAGE,
+	INFO_MESSAGE,
 } from "../../helpers/const";
+import { isMobile } from "react-device-detect";
 
 /*
 	Skills section
@@ -51,6 +54,14 @@ const Skills = () => (
 				eye.
 			</Fragment>
 		</Section>
+		<span className="container pd-b-25">
+			<Icon className="fs-140 blue mg-r-10" icon={["fas", "info-circle"]} />
+			{isMobile ? (
+				<p className="tx-ce fs-120">{MOBILE_INFO_MESSAGE}</p>
+			) : (
+				<p className="tx-ce fs-120">{INFO_MESSAGE}</p>
+			)}
+		</span>
 		<div className="container pd-b-15 f-r-st-ce">
 			<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fab", "uikit"]} />
 			<h4 className="fs-190">Front end</h4>

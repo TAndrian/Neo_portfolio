@@ -44,6 +44,10 @@
 	}
 
 	&__company-label {
+		@include screen-x(900px) {
+			margin-top: 15px;
+			font-size: 14pt;
+		}
 		@include screen-x(350px) {
 			display: none;
 		}
@@ -94,6 +98,9 @@
 	&__description {
 		text-shadow: 1px 1px 3px black;
 		color: rgb(200, 200, 200);
+		@include screen-x(900px) {
+			font-size: 15pt;
+		}
 	}
 
 	&__link {
@@ -103,6 +110,10 @@
 		}
 		&:active {
 			background: darken($color-theme, 20%);
+		}
+		@include screen-x(900px) {
+			margin-top: 15px;
+			font-size: 14pt;
 		}
 		@include screen-x(350px) {
 			margin: 10px 0 0 20px;

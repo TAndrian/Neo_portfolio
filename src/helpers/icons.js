@@ -10,13 +10,15 @@ import {
 	faBars,
 	faBookOpenReader,
 	faCalendarAlt,
+	faCheckCircle,
 	faClock,
 	faClover,
 	faCode,
 	faCodeBranch,
 	faDatabase,
 	faEnvelope,
-	faGlobe,
+	faInfo,
+	faInfoCircle,
 	faLaptop,
 	faLaptopCode,
 	faLayerGroup,
@@ -49,5 +51,7 @@ library.add(
 	faCode,
 	faDatabase,
 	faLayerGroup,
-	faRocket
+	faRocket,
+	faCheckCircle,
+	faInfoCircle
 );

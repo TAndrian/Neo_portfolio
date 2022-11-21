@@ -12,7 +12,10 @@ const Section = ({ id, className, title, subtitle, children, icon = [] }) => (
 				{subtitle || "This is a subtitle"}
 			</h3>
 			<div className="section__separator bg-theme w-40 h-5px mg-t-10"></div>
-			<p className="tx-j pd-t-20 pd-b-20 p-n n-s" style={{ lineHeight: "25px" }}>
+			<p
+				className="tx-j text pd-t-20 pd-b-20 p-n n-s"
+				style={{ lineHeight: "25px" }}
+			>
 				{children ? children : ""}
 			</p>
 		</div>

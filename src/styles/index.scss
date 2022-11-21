@@ -34,6 +34,13 @@ blockquote {
 	margin: 0;
 }
 
+.text--medium {
+	@include screen-x(900px) {
+		font-size: 14pt;
+		text-align: start;
+	}
+}
+
 .container {
 	@include flex-row(initial, flex-start);
 	width: 1400px;
