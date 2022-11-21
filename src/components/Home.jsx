@@ -25,13 +25,13 @@ const Home = () => (
 			icon={["fas", "user-graduate"]}
 		>
 			<Fragment>
-				I am a young graduate from the University of Rennes 1 based in FRANCE as
+				I am a young graduate from the University of Rennes 1 based in FRANCE as a
 				software engineer and I am currently looking for new career opportunities. I
-				am a full stack developer and interested in M.E.R.N stack projects but I am
+				am a full stack developer and interested in M.E.R.N stack projects, but I am
 				also open to learn new technologies or programming language. I enjoy
-				designing apps for web. I like them to be fast and beautiful with scallable
-				code. Do not hesitate to talk with me, I speak English and French fluently
-				apart of my native language.
+				designing apps for the web. I like them to be fast and beautiful with
+				scalable code. Do not hesitate to talk with me, I speak English and French
+				fluently a part of my native language.
 			</Fragment>
 		</Section>
 
