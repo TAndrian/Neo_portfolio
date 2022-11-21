@@ -82,7 +82,7 @@ const FRONT_END_LIST = [
 	{
 		name: "React",
 		description:
-			"I must admit it, this framework (I mean library 😉) is underrated ! This is the best JS framework I have ever used and yet, \
+			"I must admit it, this framework (I mean library 😉) is underrated! This is the best JS framework I have ever used and yet, \
 			it holds many secrets yet to be discovered.",
 		color: "rgb(34, 34, 34)",
 	},
@@ -173,7 +173,7 @@ const BACK_END_LIST = [
 	{
 		name: "Symfony",
 		description:
-			"Talking about frameworks that run under PHP, Symfony among of the best!\
+			"Talking about frameworks that run under PHP, Symfony is among of the best!\
 			 It supports O.O.P, RESTful APIs and also front end friendly. Need a simple but pretty back office? Do not look any further! Symfony has it all thanks to its various bundles.",
 		color: "rgb(34, 34, 34)",
 	},
