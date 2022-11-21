@@ -11,7 +11,7 @@ const SendMessage = () => {
 			<GetInTouchTitle title="Leave a message" icon={["fas", "envelope"]} />
 			<form
 				className="send-message f-c-ce-st"
-				action="https://formsubmit.co/t.andrian.rak.pro@gmail.com"
+				action="https://formsubmit.co/a7919fbb0efc9518af7767acdc9b9b9c"
 				method="POST"
 			>
 				<input
