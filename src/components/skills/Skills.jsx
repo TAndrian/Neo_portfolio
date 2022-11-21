@@ -39,7 +39,7 @@ const Skills = () => (
 	<Fragment>
 		<Section
 			id="skills"
-			title="My techs and Skills"
+			title="My techs and skills"
 			className="fs-250 mg-r-10"
 			subtitle="I use wonderful tools !"
 			icon={["fas", "laptop-code"]}
@@ -47,11 +47,9 @@ const Skills = () => (
 			<Fragment>
 				During my Licence degree&apos;s journey, I learned various programming
 				language and algorithms for solving problems. But my passion about the web
-				emerged when I started to build static web page as a hobbie. And then during
+				emerged when I started to build static web pages as a hobby. And then during
 				my Master degree&apos;s journey, we discovered more framework and
-				technologies about the web. Some of them could appear simple, but the logic
-				behind the stack it uses is the major part of it is hidden from the public
-				eye.
+				technologies on the web.
 			</Fragment>
 		</Section>
 		<span className="container pd-b-25">
