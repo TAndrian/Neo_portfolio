@@ -5,6 +5,7 @@ import Section from "./reusable/Section";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { MOBILE_INFO_MESSAGE, INFO_MESSAGE } from "../helpers/const";
 import { isMobile } from "react-device-detect";
+import ScrollUp from "./reusable/ScrollUp";
 
 const AboutComponent = React.lazy(() => import("./about/About"));
 const SkillsComponent = React.lazy(() => import("./skills/Skills"));
@@ -13,6 +14,7 @@ const CopyrightComponent = React.lazy(() => import("./footer/Copyright"));
 
 const Home = () => (
 	<Fragment>
+		<ScrollUp />
 		<NavbarWrapper />
 		<Cover />
 		<Section

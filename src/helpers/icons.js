@@ -7,6 +7,7 @@ import {
 	faUikit,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+	faArrowAltCircleUp,
 	faBars,
 	faBookOpenReader,
 	faCalendarAlt,
@@ -53,5 +54,6 @@ library.add(
 	faLayerGroup,
 	faRocket,
 	faCheckCircle,
-	faInfoCircle
+	faInfoCircle,
+	faArrowAltCircleUp
 );

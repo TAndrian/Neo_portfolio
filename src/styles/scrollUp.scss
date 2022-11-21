@@ -1,0 +1,46 @@
+.scrollToTop__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.scrollToTop__position {
+	position: fixed;
+	bottom: 140px;
+	right: 25px;
+	z-index: 20;
+}
+
+.icon-style {
+	padding: 10px;
+	border: 1px solid black;
+	background-color: rgb(58, 58, 236);
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+	animation: movebtn 3s ease-in-out infinite;
+}
+
+@keyframes movebtn {
+	0% {
+		transform: translateY(0px);
+	}
+	25% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@media screen and (max-width: 900px) {
+	.scrollToTop__container {
+		display: none;
+	}
+}
