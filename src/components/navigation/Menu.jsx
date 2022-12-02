@@ -15,6 +15,7 @@ const Menu = () => {
 				className="menu__link fs-110 b pd-10 pd-l-20 pd-r-20 br-5 tr-200 tx-c"
 				href={link.anchor}
 				title={link.title}
+				
 			>
 				<Icon icon={link.icon} /> {link.content}
 			</a>

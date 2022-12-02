@@ -8,9 +8,10 @@ import { SOCIALS } from "../../helpers/const";
 	Bottom part of home cover
 */
 
-const mappedSocial = SOCIALS.map(({ link, title, icon }) => (
+const mappedSocial = SOCIALS.map(({ link, title, icon, target }) => (
 	<li className="mg-l-10 mg-r-10" key={uuidv4()}>
-		<a className="link white fs-300 tr-200" href={link} title={title}>
+		<a className="link white fs-300 tr-200" href={link} title={title} rel="noreferrer"
+				target={target}>
 			<Icon icon={icon} />
 		</a>
 	</li>
