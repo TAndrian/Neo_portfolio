@@ -7,7 +7,7 @@ import React, { createContext, useState, useMemo, useContext } from "react";
 //Setup context
 const MenuContext = createContext({});
 
-//Setyp provider wrapper
+//Setup provider wrapper
 const MenuProvider = ({ children }) => {
 	const [opened, setOpened] = useState(false);
 	const [links, setLinks] = useState([
