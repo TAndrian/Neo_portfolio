@@ -17,12 +17,11 @@ import {
 	faCode,
 	faCodeBranch,
 	faDatabase,
-	faEnvelope,
-	faInfo,
+	faEnvelope, faFlask,
 	faInfoCircle,
 	faLaptop,
 	faLaptopCode,
-	faLayerGroup,
+	faLayerGroup, faListCheck,
 	faMapMarkedAlt,
 	faRocket,
 	faUserGraduate,
@@ -55,5 +54,7 @@ library.add(
 	faRocket,
 	faCheckCircle,
 	faInfoCircle,
-	faArrowAltCircleUp
+	faArrowAltCircleUp,
+	faFlask,
+	faListCheck
 );

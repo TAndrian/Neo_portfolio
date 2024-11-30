@@ -10,7 +10,10 @@ import {
 	INFO_MESSAGE,
 	MOBILE_INFO_MESSAGE,
 	NEXT_TECH_LIST,
-	OTHER_LIST, PROGRAMING_LANGUAGE_LIST,
+	OTHER_LIST,
+	PROGRAMING_LANGUAGE_LIST,
+	PROJECT_MANAGEMENT,
+	TEST_FRAMEWORK_LIST,
 } from "../../helpers/const";
 import { isMobile } from "react-device-detect";
 
@@ -24,7 +27,6 @@ const mappedFrontEndSkills = FRONT_END_LIST.map((skill) => (
 const mappedBackEndSkills = BACK_END_LIST.map((skill) => (
 	<SkillCard skill={skill} key={uuidv4()} />
 ));
-
 const mappedDbSkills = DATABASE_LIST.map((skill) => (
 	<SkillCard skill={skill} key={uuidv4()} />
 ));
@@ -37,13 +39,23 @@ const mappednextSkills = NEXT_TECH_LIST.map((skill) => (
 const mappedProgramingLanguages = PROGRAMING_LANGUAGE_LIST.map((skill) => (
 	<SkillCard skill={skill} key={uuidv4()} />
 ));
+const mappedTestFramework = TEST_FRAMEWORK_LIST.map((skill) => (
+	<SkillCard skill={skill} key={uuidv4()} />
+));
+const mappedProjectManagement = PROJECT_MANAGEMENT.map((skill) => (
+	<SkillCard skill={skill} key={uuidv4()} />
+));
 
 const Skills = () => {
-	const SKILLS_PRELUDE = <>During my Licence degree&apos;s journey, I learned various programming
-		language and algorithms for solving problems. But my passion about the web
-		emerged when I started to build static web pages as a hobby. And then
-		during my Master degree&apos;s journey, we discovered more framework and
-		technologies on the web.</>;
+	const SKILLS_PRELUDE = (
+		<>
+			During my Licence degree&apos;s journey, I learned various programming
+			language and algorithms for solving problems. But my passion about the web
+			emerged when I started to build static web pages as a hobby. And then during
+			my Master degree&apos;s journey, we discovered more framework and
+			technologies.
+		</>
+	);
 	return (
 		<Fragment>
 			<Section
@@ -53,9 +65,7 @@ const Skills = () => {
 				subtitle="I use wonderful tools !"
 				icon={["fas", "laptop-code"]}
 			>
-				<p>
-					{SKILLS_PRELUDE}
-				</p>
+				<p>{SKILLS_PRELUDE}</p>
 			</Section>
 			<span className="container pd-b-25">
 				<Icon className="fs-140 blue mg-r-10" icon={["fas", "info-circle"]} />
@@ -67,18 +77,23 @@ const Skills = () => {
 			</span>
 			<div className="container pd-b-15 f-r-st-ce">
 				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fab", "uikit"]} />
-				<h4 className="fs-190">Front end framework</h4>
+				<h4 className="fs-190">Front end frameworks</h4>
 			</div>
 			<div className="container">
 				<div className="skills w-100">{mappedFrontEndSkills}</div>
 			</div>
+
 			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
-				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "laptop-code"]} />
-				<h4 className="fs-190">Back end framework</h4>
+				<Icon
+					className="fs-240 mg-l-20 mg-r-10 blue"
+					icon={["fas", "laptop-code"]}
+				/>
+				<h4 className="fs-190">Back end frameworks</h4>
 			</div>
 			<div className="container">
 				<div className="skills w-100">{mappedBackEndSkills}</div>
 			</div>
+
 			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
 				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "code"]} />
 				<h4 className="fs-190">Programing languages</h4>
@@ -86,6 +101,7 @@ const Skills = () => {
 			<div className="container">
 				<div className="skills w-100">{mappedProgramingLanguages}</div>
 			</div>
+
 			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
 				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "database"]} />
 				<h4 className="fs-190">Database</h4>
@@ -93,6 +109,26 @@ const Skills = () => {
 			<div className="container">
 				<div className="skills w-100">{mappedDbSkills}</div>
 			</div>
+
+			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
+				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "flask"]} />
+				<h4 className="fs-190">Testing frameworks</h4>
+			</div>
+			<div className="container">
+				<div className="skills w-100">{mappedTestFramework}</div>
+			</div>
+
+			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
+				<Icon
+					className="fs-240 mg-l-20 mg-r-10 blue"
+					icon={["fas", "list-check"]}
+				/>
+				<h4 className="fs-190">Project management</h4>
+			</div>
+			<div className="container">
+				<div className="skills w-100">{mappedProjectManagement}</div>
+			</div>
+
 			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
 				<Icon
 					className="fs-240 mg-l-20 mg-r-10 blue"
