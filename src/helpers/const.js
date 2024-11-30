@@ -1,9 +1,11 @@
 import devTeamAnimation from "../assets/lotties/dev-team.gif";
 import devFreelanceAnimation from "../assets/lotties/dev-freelance.gif";
 import studentAnimation from "../assets/lotties/student.gif";
+import teamwork_lottie from "../assets/lotties/teamwork_lottie.gif";
 import achalander from "../assets/journey/achalander.png";
 import singer from "../assets/journey/singer.png";
 import istic from "../assets/journey/istic.jpg";
+import sopraSteria from "../assets/journey/sopraSteria.png"
 
 /**
  * Export constants from here
@@ -31,6 +33,23 @@ const SOCIALS = [
 ];
 
 const JOURNEY_LIST = [
+	{
+		image: sopraSteria,
+		establishment: "Sopra-Steria",
+		location: "Cesson-Sévigné, France",
+		about:
+			" My role encompassed end-to-end responsibilities, from analyzing requirements and designing solutions to developing and deploying features using Java, Spring Boot, and Angular.",
+		position: "C.D.I.",
+		duration: "~ 2 years",
+		date: "January 2023 - December 2024",
+		description:
+			"At Sopra-Steria, I contributed to the Vélo Libre-Service project as a full-stack developer, " + "\n"+
+			"focusing on designing, developing, and deploying solutions using Java, Spring Boot, and Angular. " +  "\n"+
+			"Working in Agile Scrum, I honed my technical and collaboration skills while delivering high-quality results. "+ "\n"+
+			"This role strengthened my expertise in CI/CD, teamwork, and software development.",
+		icon: ["fas", "laptop"],
+		lottie: teamwork_lottie,
+	},
 	{
 		image: achalander,
 		establishment: "Achalander.com",
@@ -67,15 +86,13 @@ const JOURNEY_LIST = [
 		image: istic,
 		establishment: "University",
 		location: "Rennes, France",
-		about: "I have learned from the one of the finest universities in Rennes.",
-		position: "University - student",
-		duration: "",
+		about: "I have learned from the one of the finest Universities in Rennes.",
+		position: "Student",
+		duration: "7 years",
 		date: "2015 - 2022",
 		description:
-			"It all begins when I started to repair and customize junk computers back when I was 15 years old. \
-			After getting some knowledges about hardware, I decided to level up my knowledge and become a software engineer. \
-			So I started my journey in France at the University of Rennes 1 to learn more about algorithms, algebras, programming language, etc... \
-			And finaly, become a software engineer.",
+			"My journey began at 15, repairing and customizing old computers, which sparked my passion for technology. " + "\n"+
+			"Eager to deepen my knowledge, I pursued software engineering at the University of Rennes 1.",
 		icon: ["fas", "book-open-reader"],
 		lottie: studentAnimation,
 	},
@@ -107,29 +124,15 @@ const FRONT_END_LIST = [
 		description:
 			"My first JS framework. One of the best tools for building SOLID 😉 and well structured web app. This is why it is the number one front end framework for big companies.",
 		color: "#f20505",
-	},
-	{
-		name: "HTML 5",
-		description:
-			"The foundation of the web itself, a markup language that has evolved though the years along with the internet.",
-		color: "rgb(230, 75, 35)",
-	},
-	{
-		name: "CSS3",
-		description:
-			"I like good looking apps! That is why I make use of the best styling features of CSS.",
-		color: "rgb(67, 124, 213)",
-	},
-	{
-		name: "SASS",
-		description:
-			"As the D.R.Y itself said: Do not Repeat Yourself! SASS is considerably speeding styles production and enforces better \
-			codebase when it comes to designing apps from scratch.",
-		color: "rgb(174, 59, 160)",
-	},
+	}
 ];
 
 const BACK_END_LIST = [
+	{
+		name: "Spring Boot",
+		description: "Just like JavaScript, Java has also its own framework.",
+		color: "#d3ebce",
+	},
 	{
 		name: "Express",
 		description:
@@ -138,40 +141,10 @@ const BACK_END_LIST = [
 		color: "#e6ecf5",
 	},
 	{
-		name: "Javascript",
-		description:
-			"Compared to Java, this one was quite easy to learn. Although Java is very solid and holds many features which far exceed Javascript.",
-		color: "rgb(238, 202, 0)",
-	},
-	{
-		name: "Typescript",
-		description:
-			"As a superset of Javascript, it's adding types to a consistent scalable code and avoid bad suprises! I like to use it when a big project is coming in.",
-		color: "rgb(25, 46, 108)",
-	},
-	{
 		name: "NodeJS",
 		description:
 			"A cross platfrom JavaScript runtime which runs on the chrome's V8 engine. Thanks to it, it is now possible to build back end written with JavaScript.",
 		color: "#e6ecf5",
-	},
-	{
-		name: "Java",
-		description:
-			"Old but gold! Secured and statically-typed! O.O.P in the arsenal! And even more... That is why it Java is loved by big companies.",
-		color: "#d0dff7",
-	},
-	{
-		name: "Springboot",
-		description: "Just like JavaScript, Java has also its own framework.",
-		color: "#d3ebce",
-	},
-	{
-		name: "Php",
-		description:
-			"Thought PHP is dead? Well sorry to disapoint ya! \
-			There are still many web apps and CMS tools out there which runs under Php, and it is loved by the start ups.",
-		color: "#734dd1",
 	},
 	{
 		name: "Symfony",
@@ -246,6 +219,59 @@ const NEXT_TECH_LIST = [
 	},
 ];
 
+const PROGRAMING_LANGUAGE_LIST = [
+	{
+		name: "Java",
+		description:
+			"Old but gold! Secured and statically-typed! O.O.P in the arsenal! And even more... That is why it Java is loved by big companies.",
+		color: "#d0dff7",
+	},
+	{
+		name: "Javascript",
+		description:
+			"Compared to Java, this one was quite easy to learn. Although Java is very solid and holds many features which far exceed Javascript.",
+		color: "rgb(238, 202, 0)",
+	},
+	{
+		name: "Typescript",
+		description:
+			"As a superset of Javascript, it's adding types to a consistent scalable code and avoid bad suprises! I like to use it when a big project is coming in.",
+		color: "rgb(25, 46, 108)",
+	},
+	{
+		name: "Php",
+		description:
+			"Thought PHP is dead? Well sorry to disapoint ya! \
+			There are still many web apps and CMS tools out there which runs under Php, and it is loved by the start ups.",
+		color: "#734dd1",
+	},
+	{
+		name: "HTML 5",
+		description:
+			"The foundation of the web itself, a markup language that has evolved though the years along with the internet.",
+		color: "rgb(230, 75, 35)",
+	},
+	{
+		name: "CSS3",
+		description:
+			"I like good looking apps! That is why I make use of the best styling features of CSS.",
+		color: "rgb(67, 124, 213)",
+	},
+	{
+		name: "SASS",
+		description:
+			"As the D.R.Y itself said: Do not Repeat Yourself! SASS is considerably speeding styles production and enforces better \
+			codebase when it comes to designing apps from scratch.",
+		color: "rgb(174, 59, 160)",
+	},
+	{
+		name: "SQL",
+		description:
+			"El senior of standardized programming language used to manage and manipulate relational databases.",
+		color: "#ffffff",
+	},
+];
+
 const MOBILE_INFO_MESSAGE = "Tap on the card to view its details.";
 const INFO_MESSAGE = "Hover on the card to view its details.";
 
@@ -259,4 +285,5 @@ export {
 	NEXT_TECH_LIST,
 	MOBILE_INFO_MESSAGE,
 	INFO_MESSAGE,
+	PROGRAMING_LANGUAGE_LIST
 };
