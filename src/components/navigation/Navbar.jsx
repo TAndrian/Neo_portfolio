@@ -3,8 +3,8 @@ import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { useMenu } from "../../hooks";
 
-const title = "T.Andrian";
-const splittedTittle = title.split("");
+const title = "T.Andrianina";
+const splitTittle = title.split("");
 
 const Navbar = () => {
 	const { toggle, links } = useMenu();
@@ -15,7 +15,7 @@ const Navbar = () => {
 		const delay = 100;
 		setTimeout(
 			() => {
-				if (currentChar < splittedTittle.length)
+				if (currentChar < splitTittle.length)
 					setTimeout(() => {
 						setCurrentChar((prevState) => prevState + 1);
 					}, delay);
@@ -24,7 +24,7 @@ const Navbar = () => {
 		);
 	}, [currentChar]);
 
-	const mappedChars = splittedTittle.map((c, key) => (
+	const mappedChars = splitTittle.map((c, key) => (
 		<span
 			className={`char white tr-200 ${currentChar >= key && "char--visible"} ${
 				key < 4 && "theme"

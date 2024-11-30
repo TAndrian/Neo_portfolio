@@ -19,16 +19,16 @@ const ProfileCard = ({ dark }) => (
 				display: "flex",
 				justifyContent: "center",
 			}}
-			alt="T.Andrian RAKOTOARISOA"
+			alt="T.Andrianina RAKOTOARISOA"
 			src={img}
 		/>
 		<h2 className="card-profile__name white pd-20 pd-t-40 pd-b-10">
-			T.Andrian RAKOTOARISOA
+			T.Andrian&apos; RAKOTOARISOA
 		</h2>
 		<div className="card-profile__separator mg-a"></div>
 		<p className="card-profile__description white tx-j pd-20 pd-b-0 pd-t-10 p-n n-s">
-			Passionnated by web application design, I take great care in the user
-			experience and the user interface of the apps I build.
+			As a full-stack developer with 2 years of professional experience in designing,
+			developing, testing and deploying software solutions, I excel in teamwork while adhering to deadlines and quality standards.
 		</p>
 		<span className="spacer"></span>
 		<div className="f-r-be-ce pd-b-5">
@@ -40,7 +40,7 @@ const ProfileCard = ({ dark }) => (
 				title="Looking for career oportunities"
 				href="#0"
 			>
-				Young graduate.
+				Junior Developer.
 			</a>
 		</div>
 	</article>

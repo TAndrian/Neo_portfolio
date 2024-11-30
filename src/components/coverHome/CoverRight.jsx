@@ -4,16 +4,8 @@ import CoverQuote from "./CoverQuote";
 
 const titleList = [
 	<span key={uuidv4()}>
-		The future belongs to <span className="theme">those who believe</span> in the
-		beauty of their <span className="theme">dreams</span>
-	</span>,
-	<span key={uuidv4()}>
 		It always seems <span className="theme">impossible</span> until it is{" "}
 		<span className="theme">done</span>
-	</span>,
-	<span key={uuidv4()}>
-		A world full of <span className="theme">love</span> is a dream full of{" "}
-		<span className="theme">smile</span>
 	</span>,
 	<span key={uuidv4()}>
 		Be the <span className="theme">change</span> everyone is waiting for
