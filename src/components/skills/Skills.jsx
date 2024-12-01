@@ -11,9 +11,10 @@ import {
 	MOBILE_INFO_MESSAGE,
 	NEXT_TECH_LIST,
 	OTHER_LIST,
-	PROGRAMING_LANGUAGE_LIST,
+	PROGRAMMING_LANGUAGE_LIST,
 	PROJECT_MANAGEMENT,
 	TEST_FRAMEWORK_LIST,
+	TOOLS,
 } from "../../helpers/const";
 import { isMobile } from "react-device-detect";
 
@@ -21,29 +22,37 @@ import { isMobile } from "react-device-detect";
 	Skills section
 */
 
-const mappedFrontEndSkills = FRONT_END_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedFrontEndSkills = FRONT_END_LIST.map((frontendSkill) => (
+	<SkillCard skill={frontendSkill} key={uuidv4()} />
 ));
-const mappedBackEndSkills = BACK_END_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedBackEndSkills = BACK_END_LIST.map((backendSkill) => (
+	<SkillCard skill={backendSkill} key={uuidv4()} />
 ));
-const mappedDbSkills = DATABASE_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedDbSkills = DATABASE_LIST.map((database) => (
+	<SkillCard skill={database} key={uuidv4()} />
 ));
-const mappedOtherSkills = OTHER_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedOtherSkills = OTHER_LIST.map((otherTech) => (
+	<SkillCard skill={otherTech} key={uuidv4()} />
 ));
-const mappedNextSkills = NEXT_TECH_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedNextToLearn = NEXT_TECH_LIST.map((nextToLearn) => (
+	<SkillCard skill={nextToLearn} key={uuidv4()} />
 ));
-const mappedProgramingLanguages = PROGRAMING_LANGUAGE_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedProgramingLanguages = PROGRAMMING_LANGUAGE_LIST.map(
+	(programmingLanguage) => (
+		<SkillCard skill={programmingLanguage} key={uuidv4()} />
+	)
+);
+const mappedTestFramework = TEST_FRAMEWORK_LIST.map((testFramework) => (
+	<SkillCard skill={testFramework} key={uuidv4()} />
 ));
-const mappedTestFramework = TEST_FRAMEWORK_LIST.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
-));
-const mappedProjectManagement = PROJECT_MANAGEMENT.map((skill) => (
-	<SkillCard skill={skill} key={uuidv4()} />
+const mappedProjectManagement = PROJECT_MANAGEMENT.map(
+	(mappedProjectManagement) => (
+		<SkillCard skill={mappedProjectManagement} key={uuidv4()} />
+	)
+);
+
+const mappedTools = TOOLS.map((tool) => (
+	<SkillCard skill={tool} key={uuidv4()} />
 ));
 
 const Skills = () => {
@@ -96,7 +105,7 @@ const Skills = () => {
 
 			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
 				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "code"]} />
-				<h4 className="fs-190">Programing languages</h4>
+				<h4 className="fs-190">Programming languages</h4>
 			</div>
 			<div className="container">
 				<div className="skills w-100">{mappedProgramingLanguages}</div>
@@ -139,15 +148,23 @@ const Skills = () => {
 			<div className="container">
 				<div className="skills w-100">{mappedOtherSkills}</div>
 			</div>
+
+			<div className="container pd-t-25 pd-b-15 f-r-st-ce">
+				<Icon className="fs-240 mg-l-20 mg-r-10 blue" icon={["fas", "toolbox"]} />
+				<h4 className="fs-190">IDEs and tools</h4>
+			</div>
+			<div className="container">
+				<div className="skills w-100">{mappedTools}</div>
+			</div>
+
 			<Section
 				title="What's next?"
 				className="fs-250 mg-r-10 orange"
 				subtitle="I am interested to learn :"
 				icon={["fas", "rocket"]}
 			/>
-
 			<div className="container">
-				<div className="skills w-100">{mappedNextSkills}</div>
+				<div className="skills w-100">{mappedNextToLearn}</div>
 			</div>
 		</Fragment>
 	);

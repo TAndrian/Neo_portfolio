@@ -1,6 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { config } from "@fortawesome/fontawesome-svg-core";
+import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
 	faGithub,
 	faLinkedinIn,
@@ -17,13 +16,17 @@ import {
 	faCode,
 	faCodeBranch,
 	faDatabase,
-	faEnvelope, faFlask,
+	faEnvelope,
+	faFlask,
+	faFolderOpen,
 	faInfoCircle,
 	faLaptop,
 	faLaptopCode,
-	faLayerGroup, faListCheck,
+	faLayerGroup,
+	faListCheck,
 	faMapMarkedAlt,
 	faRocket,
+	faToolbox,
 	faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -56,5 +59,7 @@ library.add(
 	faInfoCircle,
 	faArrowAltCircleUp,
 	faFlask,
-	faListCheck
+	faListCheck,
+	faToolbox,
+	faFolderOpen
 );

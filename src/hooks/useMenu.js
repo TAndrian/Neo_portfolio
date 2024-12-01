@@ -1,4 +1,4 @@
-import React, { createContext, useState, useMemo, useContext } from "react";
+import React, { createContext, useContext, useMemo, useState } from "react";
 
 /**
  * Hook and context for menu
@@ -23,7 +23,12 @@ const MenuProvider = ({ children }) => {
 			anchor: "#skills",
 			title: "What I can do?",
 		},
-
+		{
+			icon: ["fas", "folder-open"],
+			content: "Projects",
+			anchor: "#0",
+			title: "My personal achievements!",
+		},
 		{
 			icon: ["fas", "envelope"],
 			content: "Contacts",
