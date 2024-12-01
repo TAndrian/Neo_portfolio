@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { LazyLoadImage as Image } from "react-lazy-load-image-component";
+import PropTypes from "prop-types";
 
 /*
 	Card that displays journey item content
@@ -54,6 +55,17 @@ const AboutCard = ({
 			</div>
 		</article>
 	);
+};
+
+AboutCard.propTypes = {
+	image: PropTypes.string.isRequired,
+	establishment: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	about: PropTypes.string.isRequired,
+	position: PropTypes.string.isRequired,
+	duration: PropTypes.string.isRequired,
+	date: PropTypes.string.isRequired,
+	children: PropTypes.string.isRequired,
 };
 
 export default AboutCard;

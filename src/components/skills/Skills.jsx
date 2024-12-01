@@ -33,7 +33,7 @@ const mappedDbSkills = DATABASE_LIST.map((skill) => (
 const mappedOtherSkills = OTHER_LIST.map((skill) => (
 	<SkillCard skill={skill} key={uuidv4()} />
 ));
-const mappednextSkills = NEXT_TECH_LIST.map((skill) => (
+const mappedNextSkills = NEXT_TECH_LIST.map((skill) => (
 	<SkillCard skill={skill} key={uuidv4()} />
 ));
 const mappedProgramingLanguages = PROGRAMING_LANGUAGE_LIST.map((skill) => (
@@ -147,7 +147,7 @@ const Skills = () => {
 			/>
 
 			<div className="container">
-				<div className="skills w-100">{mappednextSkills}</div>
+				<div className="skills w-100">{mappedNextSkills}</div>
 			</div>
 		</Fragment>
 	);
