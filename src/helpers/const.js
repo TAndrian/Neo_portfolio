@@ -156,7 +156,7 @@ const BACK_END_LIST = [
 		name: "Symfony",
 		description:
 			"Talking about frameworks that run under PHP, Symfony is among of the best! " +
-			"It supports O.O.P, RESTful APIs and also front end friendly. Need a simple but pretty back office? Do not look any further! Symfony has it all thanks to its various bundles.",
+			"It supports O.O.P, RESTFUL APIs and also front end friendly. Need a simple but pretty back office? Do not look any further! Symfony has it all thanks to its various bundles.",
 		color: "rgb(34, 34, 34)",
 	},
 ];
@@ -234,7 +234,7 @@ const NEXT_TECH_LIST = [
 	},
 ];
 
-const PROGRAMING_LANGUAGE_LIST = [
+const PROGRAMMING_LANGUAGE_LIST = [
 	{
 		name: "Java",
 		description:
@@ -346,6 +346,28 @@ const PROJECT_MANAGEMENT = [
 			"The version control system currently used by every developer and DevOps. It will make your project's works like magic!",
 		color: "#e8e8e8",
 	},
+];
+
+const TOOLS = [
+	{
+		name: "IntelliJ",
+		description:
+			"Mostly Java's new IDE which offers smart code assistance, debugging, and seamless framework integrations. It's known for its efficiency, user-friendly interface, and extensive plugin support.",
+		color: "#494a4f",
+	},
+	{
+		name: "Postman",
+		description:
+			"The popular API testing tool that allows developers to send requests, analyze responses, and automate API testing. It simplifies API development with features like collections, environment variables, and integrations.",
+		color: "#d35050",
+	},
+	{
+		name: "Swagger",
+		description:
+			"Similarly to Postman, Swagger is a framework for designing, building, and documenting RESTFUL APIs.",
+		color: "#61a432",
+	},
+
 	{
 		name: "Google data studio",
 		description:
@@ -367,7 +389,8 @@ export {
 	NEXT_TECH_LIST,
 	MOBILE_INFO_MESSAGE,
 	INFO_MESSAGE,
-	PROGRAMING_LANGUAGE_LIST,
+	PROGRAMMING_LANGUAGE_LIST,
 	TEST_FRAMEWORK_LIST,
 	PROJECT_MANAGEMENT,
+	TOOLS,
 };
