@@ -208,7 +208,7 @@ const OTHER_LIST = [
 		name: "Keycloak",
 		description:
 			"Keycloak offers you the identity and access management solution in the most E A S Y way ever!",
-		color: "#c7c7c9",
+		color: "#ffffff",
 	},
 ];
 
